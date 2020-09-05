@@ -1,0 +1,17 @@
+.container {
+    border: 10px solid red;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+}
+
+.card-title {
+    /* margin: auto;
+    display: block;
+    width: 100px; */
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    justify-content: center;
+}
