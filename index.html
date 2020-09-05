@@ -1,56 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weathe api</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script src="https://use.fontawesome.com/dad1794247.js"></script>
+    <script src="https://kit.fontawesome.com/0d7735c391.js" crossorigin="anonymous"></script>
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="index1.css">
+    <script src="weather.js"></script>
 </head>
-<script src="weather.js"></script>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    .container {
-        margin: auto;
-        display: block;
-        text-align: center;
-        top: 50%;
-        /* width: 50%; */
-    }
-    
-    .row {
-        margin: auto;
-        display: block;
-        width: 30%;
-        text-align: center;
-        background-color: bisque;
-    }
-    
-    .input {
-        background-color: red;
-    }
-</style>
 
 <body>
+    <!-- <h1>Hello, world!</h1> -->
+
     <div class="container">
         <div class="row">
-            <input type="text" name="data" id="input"> <button type="button" id="btn" onclick="fn1()">Enter</button>
-            <br> <br>
-            <!-- <textarea name="textarea" id="text" cols="28" rows="10"> -->
-            <div style="font-size: xx-large;">
-                <div id="one">
+            <div class="card text-white bg-info mb-3 mx-auto first" style="width: 30em;height:60vh;border-radius: 50px;box-shadow: 10px 10px 10px  lightblue;">
+                <!-- <div class="card-header">Header</div> -->
+                <div class="card-body">
+                    <h5 class="card-title">Weather App</h5>
+                    <p class="card-text">
+                        <input class="form-control mx-2" type="text" placeholder="Enter city name" id="input" style="display: inline-block;width:70%;">
+                        <button type="button" class="btn btn-warning btn-lg mx-auto py-1" onclick="fn1()" style="display: inline-block;width: 20%;height: 40px;">Enter</button>
+                        <!-- <button type="button" id="btn" onclick="fn1()">Enter</button> -->
+                        <br> <br>
 
+                        <div style="font-size: xx-large;">
+                            <div style="text-align: center;">
+                                <i class="fas fa-temperature-high"></i> <span id="one"></span>
+                            </div>
+                            <div style="text-align: center;">
+                                <i class="fas fa-tint"></i> <span id="four"></span>
+                            </div>
+                            <div style="text-align: center;">
+                                <i class="fas fa-thermometer-full"></i> <span id="five"></span>
+                            </div>
+                            <div style="text-align: center;">
+                                <i class="far fa-eye-slash"></i> <span id="two"></span>
+                            </div>
+
+                            <div style="text-align:center;">
+                                <i class="fas fa-cloud"></i> <span id="three" style="display: inline-block;"></span>
+                            </div>
+
+                        </div>
+
+                    </p>
                 </div>
-                <div id="two"></div>
-                <div id="three"></div>
             </div>
 
         </div>
     </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
